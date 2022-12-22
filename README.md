@@ -4,7 +4,7 @@ Cayuga is regexp-based TON address generator
 
 
 ## Installation
-via git:
+from github:
 
 ```
 git clone https://github.com/1ort/cayuga.git
