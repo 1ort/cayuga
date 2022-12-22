@@ -45,8 +45,8 @@ func PrinterWorker(results <-chan result) {
 
 func main() {
 	rr := flag.String("r", `^`, "Regexp pattern")
-	workers := flag.Int("w", 1, "Number of workers")
 	icase := flag.Bool("i", false, "Ignore letter case")
+	workers := flag.Int("w", 1, "Number of workers")
 	flag.Parse()
 	if *icase {
 		*rr = fmt.Sprintf("%s%s", "(?i)", *rr)
